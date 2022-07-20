@@ -1,0 +1,49 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+textarea {
+  height: 100%;
+  min-height: 195px;
+  max-height: 1000px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.largeInput {
+  background-color: #f8f8f8;
+  min-height: 200px;
+  overflow: auto;
+  white-space: pre-wrap;
+  width: 100%;
+}
+
+.hiragana {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+.katakana {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+.kanji {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+.start {
+  background-color: lightskyblue;
+}
+
+.end {
+  background-color: coral;
+}
+
+.subsection {
+  border-top: solid 1px $hr-border-color;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
