@@ -3,20 +3,31 @@
 
 @import "{{ site.theme }}";
 
+.textBox {
+  margin: auto;
+  width: 90%;
+}
+
+.textBoxInput {
+  height: 250px;
+}
+
 textarea {
-  height: 100%;
-  min-height: 195px;
-  max-height: 1000px;
-  max-width: 100%;
+  height: 250px;
+  resize: none;
   width: 100%;
 }
 
-.largeInput {
+.textBoxOutput-wrapper {
   background-color: #f8f8f8;
-  min-height: 200px;
-  overflow: auto;
+  /* overflow-y: scroll; */
+}
+
+.textBoxOutput {
+  /* max-height: 500px; */
+  min-height: 250px;
+  overflow-x: visible;
   white-space: pre-wrap;
-  width: 100%;
 }
 
 .hiragana {
@@ -38,6 +49,14 @@ textarea {
   background-color: lightskyblue;
 }
 
+.start-error {
+  margin-left: -22px;
+}
+
 .end {
   background-color: coral;
+}
+
+.end-error {
+  margin-right: -22px;
 }

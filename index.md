@@ -1,9 +1,13 @@
 <h2>Text input</h2>
 
-<textarea id="textInputArea" class="largeInput"></textarea>
+<div class="textBox textBoxInput">
+  <textarea id="textInputArea"></textarea>
+</div>
+
 
 <h2>Text display</h2>
-<div id="textDisplay" class="largeInput">
+<div class="textBox textBoxOutput-wrapper">
+  <div id="textOutputArea" class="textBoxOutput"></div>
 </div>
 
 <h2>Legends</h2>
