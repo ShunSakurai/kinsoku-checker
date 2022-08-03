@@ -1,7 +1,8 @@
+<!-- Last update on Aug 3, 2022 -->
 <h2>Text input</h2>
 
 <div class="textBox textBoxInput">
-  <textarea id="textInputArea"></textarea>
+  <textarea id="textInputArea" placeholder="Enter JA text here"></textarea>
 </div>
 
 
@@ -25,5 +26,11 @@
 <div class="container-example-image">
   <img class="scale-example-image" src="images/examples.png">
 </div>
+
+<h2>Documentation</h2>
+Please see <a href="https://github.com/ShunSakurai/kinsoku-checker" rel="noopener oreferrer" tabindex="-1" target="blank_">README</a> for details.
+
+You might be interested in other tools by the developer:
+- <a href="https://shunsakurai.github.io/trans-diff/" rel="noopener oreferrer" tabindex="-1" target="blank_">Trans Diff</a>
 
 <script src="script.js" type="text/javascript" charset="utf-8" async defer></script>
