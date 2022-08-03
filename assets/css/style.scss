@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+body {
+  color: black;
+}
+
 .textBox {
   margin: auto;
   width: 90%;
@@ -46,7 +50,11 @@ textarea {
 }
 
 .start {
-  background-color: lightskyblue;
+  background-color: deepskyblue;
+}
+
+.start-stricter {
+  background-color: lightblue;
 }
 
 .start-error {
@@ -57,6 +65,22 @@ textarea {
   background-color: coral;
 }
 
+.end-stricter {
+  background-color: peachpuff;
+}
+
 .end-error {
   margin-right: -22px;
+}
+
+.container-example-image {
+  align-items: center;
+  display: flex;
+  max-height: 700px;
+}
+
+.scale-example-image {
+  -moz-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
 }

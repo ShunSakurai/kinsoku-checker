@@ -15,11 +15,15 @@
   <li><span class="hiragana">Hiragana</span></li>
   <li><span class="katakana">Katakana</span></li>
   <li><span class="kanji">Kanji</span></li>
-  <li><span class="start">Not allowed at the start</span></li>
-  <li><span class="end">Not allowed at the end</span></li>
+  <li><span class="start">Not allowed at the start ←</span></li>
+  <li><span class="start-stricter">Not allowed at the start (stricter rule)</span></li>
+  <li><span class="end">Not allowed at the end →</span></li>
+  <li><span class="end-stricter">Not allowed at the end (stricter rule)</span></li>
 </ul>
 
 <h2>Examples</h2>
-<img src="images/examples.png">
+<div class="container-example-image">
+  <img class="scale-example-image" src="images/examples.png">
+</div>
 
 <script src="script.js" type="text/javascript" charset="utf-8" async defer></script>

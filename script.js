@@ -13,8 +13,10 @@ const textOutputArea = document.getElementById('textOutputArea');
 textInputArea.addEventListener('input', function(e){
   let text = textInputArea.value;
   // Deleting the straight double quotation: "
-  text = text.replace(/([\)\]）］｝〕〉》」』】〙〗〟'｠»ヽヾーァィゥェォッャュョヮヵヶぁぃぅぇぉっゃゅょゎゕゖㇰㇱㇲㇳㇴㇵㇶㇷㇸㇹㇺㇻㇼㇽㇾㇿ々〻‐゠–〜！？!‼⁇⁈⁉・、:;,。\.]+)/g, '<span class="start">$1</span>');
-  text = text.replace(/([\(\[（［｛〔〈《「『【〘〖〝'｟«]+)/g, '<span class="end">$1</span>');
+  text = text.replace(/([!),\.:;\?\]}»‐–’”‼⁇⁈⁉、。々〉》」』】〕〗〙〟〻ゞ・ヽヾ！），．：；？］｝｠]+)/g, '<span class="start">$1</span>');
+  text = text.replace(/([%¢‰℃℉〜ぁぃぅぇぉっゃゅょゎゕゖ゛゜゠ァィゥェォッャュョヮヵヶーㇰㇱㇲㇳㇴㇵㇶㇷㇸㇹㇺㇻㇼㇽㇾㇿ％]+)/g, '<span class="start-stricter">$1</span>');
+  text = text.replace(/([([{«‘“〈《「『【〔〖〘〝（［｛｟]+)/g, '<span class="end">$1</span>');
+  text = text.replace(/([#$@£¥€〒＃＄＠￡￥]+)/g, '<span class="end-stricter">$1</span>');
   text = text.replace(/^(<span class="start">.<\/span>)/gm, '<span class="start-error">⚠️ $1</span>');
   text = text.replace(/(<span class="end">.<\/span>)$/gm, '<span class="end-error">$1 ⚠️</span>');
   text = text.replace(/([\u{3041}-\u{3096}]+)/gu, '<span class="hiragana">$1</span>');
