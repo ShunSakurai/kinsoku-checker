@@ -4,18 +4,24 @@ Visualize Japanese character types and line breaking rules
 
 [https://shunsakurai.github.io/kinsoku-checker/](https://shunsakurai.github.io/kinsoku-checker/)
 
-### Context
-
 ### How to use
 
-When entering the Japanese text into the textarea input field, the character types and characters which aren't allowed at the start/end of a line are displayed.
+When entering the Japanese text into the textarea input field, the tool displays the character types and characters which aren't allowed at the start/end of the lines.
 
 ## Motivation and inspiration
 
 Japanese text needs to follow line break rules ([kinsoku shori](https://en.wikipedia.org/wiki/Line_breaking_rules_in_East_Asian_languages)).
-Websites can support the rules by simple CSS rules such as `word-break: normal;`.
-However, we need to manually check them for DTPed files such as PDF and PPT. Adobe tools have settings but it's limited to Japanese UI.
-I created this tool to help DTP teams who don't understand Japanese language.
+
+For websites, we can support the rules by simple CSS rules such as:
+
+- `line-break: strict;`
+- `overflow-wrap: break-word;`
+- `word-break: keep-all;`
+- `word-wrap: break-word;`
+
+For DTPed files such as PDF and PPT, Adobe tools have settings to automatically apply the line breaking rules, but it's limited to Japanese UI. If you use them in other languages such an English, we need to manually check the rules.
+
+I created this tool to help DTP teams who don't understand Japanese language and can't use the Adobe tools in Japanese UI.
 
 ## License
 
