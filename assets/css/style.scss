@@ -23,7 +23,7 @@ textarea {
 }
 
 .textBoxOutput-wrapper {
-  background-color: #f8f8f8;
+  background-image: #f8f8f8;
   /* overflow-y: scroll; */
 }
 
@@ -50,11 +50,11 @@ textarea {
 }
 
 .start {
-  background-color: deepskyblue;
+  background-image: linear-gradient(to right, deepskyblue 0%, transparent 50%);
 }
 
 .start-stricter {
-  background-color: lightblue;
+  background-image: linear-gradient(to right, lightblue 0%, transparent 50%);
 }
 
 .start-error {
@@ -62,11 +62,11 @@ textarea {
 }
 
 .end {
-  background-color: coral;
+  background-image: linear-gradient(to left, deepskyblue 0%, transparent 50%);
 }
 
 .end-stricter {
-  background-color: peachpuff;
+  background-image: linear-gradient(to left, lightblue 0%, transparent 50%);
 }
 
 .end-error {
@@ -75,7 +75,7 @@ textarea {
 
 .container-example-image {
   align-items: center;
-  display: flex;
+  display: none;
   max-height: 700px;
 }
 
