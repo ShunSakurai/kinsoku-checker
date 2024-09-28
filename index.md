@@ -1,15 +1,23 @@
-<!-- Last update on Aug 3, 2022 -->
-<h2>Text input</h2>
+<div class="flex-parent">
 
-<div class="textBox textBoxInput">
-  <textarea id="textInputArea" placeholder="Enter JA text here"></textarea>
+  <div class="flex-left">
+    <h2>Text input</h2>
+    <div class="textBox textBoxInput">
+      <textarea id="textInputArea" placeholder="Enter JA text here"></textarea>
+    </div>
+  </div>
+
+
+  <div class="flex-right">
+    <h2>Text display</h2>
+    <div class="textBox textBoxOutput-wrapper">
+      <div id="textOutputArea" class="textBoxOutput"></div>
+    </div>
+  </div>
+
 </div>
 
-
-<h2>Text display</h2>
-<div class="textBox textBoxOutput-wrapper">
-  <div id="textOutputArea" class="textBoxOutput"></div>
-</div>
+---
 
 <h2>Legends</h2>
 <ul>

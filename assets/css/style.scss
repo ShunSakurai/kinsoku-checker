@@ -7,6 +7,20 @@ body {
   color: black;
 }
 
+.flex-parent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-left {
+  width: 98%;
+}
+
+.flex-right {
+  width: 98%;
+}
+
+
 .textBox {
   margin: auto;
   width: 90%;
